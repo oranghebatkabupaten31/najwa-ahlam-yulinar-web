@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ff69b4">
+  <title>For My Princess ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <span>♡</span><span>✿</span><span>♡</span><span>୨୧</span><span>♡</span><span>✧</span>
+  </div>
+  <main class="app-shell">
+    <div class="topline"><span class="tiny-heart">♥</span> a little website made with love <span class="tiny-heart">♥</span></div>
+
+    <section class="screen active" id="login-screen">
+      <div class="sticker sticker-one">🧸</div><div class="sticker sticker-two">🎀</div>
+      <p class="eyebrow">A SPECIAL LITTLE PLACE</p>
+      <h1>Welcome to<br><span>my princess's</span> world!</h1>
+      <p class="intro">Ada sesuatu yang manis buat kamu.<br>Masukkan kata rahasianya, yaa ♡</p>
+      <form id="login-form" class="login-card">
+        <label for="secret">Our little secret</label>
+        <div class="input-wrap"><span>♡</span><input id="secret" type="password" placeholder="Kata rahasia..." autocomplete="off" required></div>
+        <p class="error" id="login-error" role="alert"></p>
+        <button class="button button-main" type="submit">Buka pintunya <span>♡</span></button>
+      </form>
+      <p class="tiny-note">made for one very special person ✧</p>
+    </section>
+
+    <section class="screen" id="welcome-screen">
+      <div class="welcome-art"><span class="orbit orbit-a">♡</span><span class="orbit orbit-b">✧</span><div class="big-bear">🧸</div><div class="heart-bubble">♥</div></div>
+      <p class="eyebrow">YAY, YOU'RE HERE!</p>
+      <h1 class="hello">Halooo,<br><span>Najwa Ahlam Yulinar!</span></h1>
+      <p class="intro">Akhirnya kamu sampai juga di sini, sayanggg.<br>Aku punya beberapa surat kecil buat kamu 💗</p>
+      <button class="button button-main next" data-next="letter-screen">Aku mau lihat! <span>♡</span></button>
+    </section>
+
+    <section class="screen" id="letter-screen">
+      <p class="eyebrow">OPEN WHEN YOU'RE READY</p>
+      <h2>Surat kecil <span>untukmu</span> 💌</h2>
+      <p class="intro">Pilih amplopnya, sayang. Semuanya punya pesan kecil.</p>
+      <div class="envelope-grid">
+        <button class="envelope-card" data-letter="0"><span class="envelope">💌</span><strong>Surat pertama</strong><small>sedikit tentang kamu</small></button>
+        <button class="envelope-card" data-letter="1"><span class="envelope">💌</span><strong>Surat kedua</strong><small>kalau harimu berat</small></button>
+        <button class="envelope-card" data-letter="2"><span class="envelope">💌</span><strong>Surat ketiga</strong><small>kenangan manis</small></button>
+      </div>
+      <div class="letter-paper" id="letter-paper" hidden>
+        <span class="paper-heart">♡</span><p id="letter-text"></p>
+        <button class="button button-soft" id="close-letter">Lipat lagi ♡</button>
+      </div>
+      <button class="button button-main next" data-next="message-one">Baca surat spesial <span>♡</span></button>
+    </section>
+
+    <section class="screen" id="message-one">
+      <div class="memory-layout">
+        <div class="memory-photo"><img src="assets/kenangan_3.jpg" alt="Kolase kenangan manis"><span class="photo-caption">my favorite person ♡</span></div>
+        <article class="message-card"><span class="card-doodle">୨୧</span><p class="eyebrow">A NOTE FOR YOU</p>
+          <h2>Sayanggg, kamu tahu gaa? 💗</h2>
+          <p>Dari sekian banyak hal indah yang aku temuin di dunia ini, kamu tetap jadi salah satu hal terindah yang pernah hadir di hidup aku.</p>
+          <p>Makasih yaa udah hadir, udah bertahan, dan udah jadi bagian dari hari-hari aku. Aku emang nggak selalu bisa bikin kamu bahagia, tapi aku bakal terus belajar buat jadi seseorang yang bikin kamu ngerasa dicintai setiap harinya.</p>
+          <p class="signature">I love you more than you know, sayang ♡</p>
+          <button class="button button-main next" data-next="message-two">Lanjutkan <span>♡</span></button>
+        </article>
+      </div>
+    </section>
+
+    <section class="screen" id="message-two">
+      <div class="memory-layout">
+        <div class="memory-photo"><img src="assets/kenangan_4.jpg" alt="Kolase foto kenangan"><span class="photo-caption">always cheering for you ♡</span></div>
+        <article class="message-card"><span class="card-doodle">✿</span><p class="eyebrow">WHENEVER YOU NEED IT</p>
+          <h2>Kalau dunia terasa berat…</h2>
+          <p>Kalau suatu hari kamu ngerasa dunia lagi nggak berpihak sama kamu, inget yaa, kamu nggak harus selalu kuat sendirian. Kamu boleh capek, boleh cerita, dan boleh jadi diri kamu sendiri.</p>
+          <p>Aku mungkin nggak selalu punya solusi buat semua masalah kamu, tapi aku bakal berusaha buat dengerin kamu. Buat aku, kamu bukan cuma seseorang yang aku sayang, tapi juga seseorang yang kebahagiaannya berarti banget buat aku. ♡</p>
+          <p class="signature">Peluk jauh yang paling hangat buat kamu 🎀</p>
+          <button class="button button-main next" data-next="video-screen">Ada satu hal lagi… <span>♡</span></button>
+        </article>
+      </div>
+    </section>
+
+    <section class="screen dark-screen" id="video-screen">
+      <div class="stars" aria-hidden="true">✦　·　✧　　·　♡　·　✦</div>
+      <p class="eyebrow">A LITTLE LOVE SHOW</p>
+      <h2>Just for you, <span>my love</span></h2>
+      <p class="intro">Kamu satu-satunya yang ada di dalam hati aku ♡</p>
+      <div class="code-love" id="code-love" aria-label="Animasi angka satu dari karakter I love you">
+        <div class="code-rain" aria-hidden="true"></div>
+        <div class="code-number" aria-hidden="true">1</div>
+        <div class="code-caption">I LOVE YOU · I LOVE YOU · I LOVE YOU</div>
+      </div>
+      <p class="video-hint">A little message, made just for you ♡</p>
+      <button class="button button-outline" id="skip-video">Lanjutkan ♡</button>
+    </section>
+
+    <section class="screen ending-screen" id="ending-screen">
+      <div class="ending-heart">♡</div>
+      <p class="eyebrow">AND ONE LAST THING...</p>
+      <h1>Sampai sini dulu yaa, <span>sayang.</span></h1>
+      <div class="ending-note">Ini hanya akhir dari webnya, bukan akhir dari hubungan dua orang yang saling mencintai. Semoga Tuhan selalu mempermudah jalan dua orang yang saling melengkapi ini. ♡</div>
+      <p class="signature">With all my love, always 🎀</p>
+      <button class="button button-main" id="restart">Baca lagi dari awal ↻</button>
+    </section>
+
+    <footer>made with ♡, just for you <span>✧</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
